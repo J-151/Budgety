@@ -232,7 +232,7 @@ var UIController = (function() {
             };
         },
         
-        
+
         addListItem: function(obj, type) {
             var html, newHtml, element;
             // Create HTML string with placeholder text
@@ -400,7 +400,7 @@ var controller = (function(budgetCtrl, UICtrl) {
     
     
     var ctrlAddItem = function() {
-        var input, newItem;
+        
         
         // 1. Get the field input data
         input = UICtrl.getInput();        
@@ -421,12 +421,27 @@ var controller = (function(budgetCtrl, UICtrl) {
             // 6. Calculate and update percentages
             updatePercentages();
         }
+        if(input.type === 'inc'){
+        var x=document.getElementById("toast__income--add");
+        x.className="show";
+        setTimeout(function(){
+            x.className=x.className.replace("show","");
+        }, 3000);
+        }
+        if(input.type === 'exp'){
+            var x=document.getElementById("toast__expense--add");
+            x.className="show";
+            setTimeout(function(){
+                x.className=x.className.replace("show","");
+            }, 3000);
+            }
     };
     
     
     var ctrlDeleteItem = function(event) {
         var itemID, splitID, type, ID;
-        
+        var input, newItem;
+                
         itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
         
         if (itemID) {
@@ -448,7 +463,24 @@ var controller = (function(budgetCtrl, UICtrl) {
             // 4. Calculate and update percentages
             updatePercentages();
         }
+        if(type=== 'inc'){
+            var x=document.getElementById("toast__income--delete");
+        x.className="show";
+
+        setTimeout(function(){
+            x.className=x.className.replace("show","");
+        }, 3000);
+        }
+        if(type=== 'exp'){
+            var x=document.getElementById("toast__expense--delete");
+        x.className="show";
+
+        setTimeout(function(){
+            x.className=x.className.replace("show","");
+        }, 3000);
+        }
     };
+       
     
     
     return {

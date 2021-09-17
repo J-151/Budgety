@@ -12,8 +12,13 @@
     <body>
         
         <div class="top">
+            <div id="toast__income--add">Income Added!</div>
+            <div id="toast__income--delete">Income Deleted!</div>
+            <div id="toast__expense--add">Expense Added!</div>
+            <div id="toast__expense--delete">Expense Deleted!</div>
             <div class="budget">
                 <div class="budget__title">
+                   
                     Available Budget in <span class="budget__title--month">%Month%</span>:
                 </div>
                 
@@ -47,7 +52,7 @@
                         <option value="exp">-</option>
                     </select>
                     <input type="text" class="add__description" placeholder="Add description">
-                    <input type="number" class="add__value" placeholder="Value">
+                    <input type="number" class="add__value" placeholder="Amount" required>
                     <button class="add__btn"><i class="far fa-check-circle"></i></button>
                 </div>
             </div>
