@@ -34,4 +34,7 @@ To run the site on your local machine
 
 ## Screenshots
 
-
+![Budgety - Google Chrome 9_18_2021 4_44_46 PM](https://user-images.githubusercontent.com/71957607/133887135-a5967464-06ba-4e63-ba2d-38f271bba1d2.png)
+![Budgety - Google Chrome 9_18_2021 4_45_19 PM](https://user-images.githubusercontent.com/71957607/133887082-3d4c4e2a-87d1-474a-a71f-5d4f60d170d0.png)
+![Budgety - Google Chrome 9_18_2021 4_46_42 PM](https://user-images.githubusercontent.com/71957607/133887097-1b5ef8ff-57b5-4907-86b2-6d4df0a7e7fb.png)
+![Budgety - Google Chrome 9_18_2021 4_48_24 PM](https://user-images.githubusercontent.com/71957607/133887121-c0634832-0a26-4707-9f52-26dd0e31800e.png)
